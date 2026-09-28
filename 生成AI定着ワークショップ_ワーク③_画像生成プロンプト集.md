@@ -5,10 +5,15 @@
 - 英語で公開されている公式ガイド（OpenAI・Google）のプロンプトは、日本語に訳して載せています。
 - 作例の画像は、各出典のページから表示しています。画像とプロンプトの権利は、それぞれの出典・作者にあります（一覧は[出典](#sources)）。
 
+> [!TIP]
+> **画像生成の無料枠が使えなくなったら**、スタイルアーツの画像生成アプリ「フライヤースタジオ」を使えます（合言葉は会場でお伝えします）。このページのプロンプトを、そのまま貼り付けて使えます。
+>
+> https://flyer-studio.style-arts.workers.dev/ （[使い方](README.md#flyer-studio)）
+
 ## もくじ
 
 - [1. チラシ・フライヤーを作るとき](#flyer)
-  - [チラシ用プロンプトの型](#flyer-template)／[講師デモ：買取強化のPOPができるまで](#flyer-demo)／[チラシ・ポスターの作例](#flyer-examples)／[チラシの素材づくり](#flyer-parts)／[チラシでよく使う言い方](#flyer-words)
+  - [チラシ用プロンプトの型](#flyer-template)／[講師デモ：買取強化のPOPができるまで](#flyer-demo)／[チラシ・ポスターの作例](#flyer-examples)／[チラシの素材づくり](#flyer-parts)／[チラシでよく使う言い方](#flyer-words)／[チラシを直すときのひと言](#flyer-fix)
 - [2. 書き方の基本（公式ガイドより）](#basics)
 - [3. 言い方でこう変わる（修飾語・デザイン用語）](#words)
   - [光（照明）](#w-light)／[カメラ・撮り方](#w-camera)／[色味・フィルム](#w-color)／[素材・質感](#w-material)／[画風](#w-style)／[文字](#w-text)／[レイアウト](#w-layout)／[雰囲気と「避けたいこと」](#w-tone)
@@ -41,6 +46,7 @@
 A4縦で印刷する、（店名）の「（イベント・キャンペーン名）」のチラシを作ってください。
 （どこに貼る・配るか　例：店頭のレジ横に貼り、来店したお客様に見てもらいます）。
 雰囲気は（例：明るくにぎやか／上品で落ち着いた／懐かしい昭和レトロ風）。配色は（色1）・（色2）・（色3）を中心にしてください。
+（お手本がある場合）添付した過去のチラシの雰囲気とレイアウトに合わせてください。
 チラシに入れる文字は、次のとおりです（そのまま使ってください）。
 ・見出し：「（見出し）」
 ・日付：「（〇月〇日（〇）〜〇月〇日（〇））」
@@ -54,7 +60,9 @@ A4縦で印刷する、（店名）の「（イベント・キャンペーン名
 まず1案作ってください。
 ```
 
-別の案がほしいときは、続けて「次のデザインもお願いします」と送ります。一度に「3案」と頼むと、1枚の画像に3案がまとめて出ることがあります（下の講師デモを参照）。
+- 好評だった過去のPOPやチラシの写真があれば、添付してお手本にしましょう。お店らしい仕上がりに近づきます（お手本がなければ、その行は消してください）。
+- 別の案がほしいときは、続けて「次のデザインもお願いします」と送ります。一度に「3案」と頼むと、1枚の画像に3案がまとめて出ることがあります（下の講師デモを参照）。
+- 画像生成が止まったら、Gemini・Copilotに移るか、[フライヤースタジオ](https://flyer-studio.style-arts.workers.dev/)にこの型を貼り付けて使ってください（合言葉は会場でお伝えします）。
 
 <a id="flyer-demo"></a>
 
@@ -197,6 +205,26 @@ A4縦で印刷する前提で、見出し・本文・注意書きに分けて3�
 | 案を増やす | 「まず1案」→「次のデザインもお願いします」 |
 
 光・色味・書体・レイアウトなどの言い方と比較画像は、[3章](#words)にまとめています。
+
+<a id="flyer-fix"></a>
+
+### チラシを直すときのひと言
+
+1か所だけ直したいときは、同じチャットで「〇〇だけ」と伝え、変えない所も書き添えます（[2章](#basics)の8）。
+
+```text
+見出しの文字だけ「（新しい見出し）」に変えてください。それ以外は変えないでください。
+```
+
+```text
+日付を「（〇月〇日（〇）〜〇月〇日（〇））」に直してください。レイアウトと配色はそのままにしてください。
+```
+
+```text
+背景の色だけ白にしてください。文字とレイアウトはそのままにしてください。
+```
+
+直したい点が多いときや、雰囲気を大きく変えたいときは、同じチャットで注文を重ねるより、直したい点を型に書き足して**新しいチャット**で作り直すほうが早く仕上がります。日付・価格などの細かい文字は、Canvaで直すのが確実です。
 
 ---
 
@@ -436,9 +464,9 @@ OpenAI と Google の公式ガイドに共通するポイントです。
 
 **自店で使うなら**：中国語のコピーを、店名・商品名・価格・期間などの日本語に置き換えます（例：「新弾入荷」「〇月〇日発売」「店頭予約受付中」）。
 
-<a id="ex-luxury"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[卡尔的AI沃茨](https://mp.weixin.qq.com/s/ASxig6mFVYxrIE8-8Fthew)
+
+<a id="ex-luxury"></a>
 
 #### 高級感のある商品ポスター
 
@@ -480,9 +508,9 @@ OpenAI と Google の公式ガイドに共通するポイントです。
 
 **自店で使うなら**：限定品や高額商品の告知に。商品名・価格・特典（「先着〇名」など）を置き換えます。
 
-<a id="ex-brand-ad"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[卡尔的AI沃茨](https://mp.weixin.qq.com/s/ASxig6mFVYxrIE8-8Fthew)
+
+<a id="ex-brand-ad"></a>
 
 #### ブランドの広告（キャッチコピー入り）
 
@@ -650,9 +678,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：`[product name]` を「中古のゲーム機本体」「トレカ用スリーブ」などに。細かい内容は、商品の情報を貼り付けて渡します。
 
-<a id="ex-logo"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[Article](https://x.com/MrLarus/status/2046627021674168640) | [@MrLarus](https://x.com/MrLarus/status/2046544209117634735)
+
+<a id="ex-logo"></a>
 
 ### ロゴ
 
@@ -719,9 +747,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：「トレカが店頭に並ぶまで」「買取から販売までの流れ」などに置き換えます。
 
-<a id="ex-translate"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[卡尔的AI沃茨](https://mp.weixin.qq.com/s/ASxig6mFVYxrIE8-8Fthew)
+
+<a id="ex-translate"></a>
 
 #### 機械の仕組みの図解 → 文字だけ翻訳
 
@@ -845,9 +873,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：`[city]` を地元の町名にし、「お店の周辺マップ」「イベント当日の回り方」などに。
 
-<a id="ex-ui"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[Article](https://x.com/MrLarus/status/2046627021674168640) | [@MrLarus](https://x.com/MrLarus/status/2046523494003851300)
+
+<a id="ex-ui"></a>
 
 ### SNS・アプリ画面
 
@@ -975,9 +1003,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：`[場所]` を「ホビーショップの店内」などに。
 
-<a id="ex-dense"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[@LexnLin](https://x.com/LexnLin/status/2046725722320888313) | [@LexnLin](https://x.com/LexnLin/status/2046675069678563385)
+
+<a id="ex-dense"></a>
 
 #### 文字がぎっしり入った画像（メニュー・新聞など）
 
@@ -994,9 +1022,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：`[scene / content]` を「中古ゲームの買取価格表」「イベントのタイムテーブル」などに。
 
-<a id="ex-chara"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[Article](https://x.com/MrLarus/status/2046627021674168640) | [@MrLarus](https://x.com/MrLarus/status/2044824800909054181)
+
+<a id="ex-chara"></a>
 
 ### キャラクター・漫画・ステッカー
 
@@ -1019,9 +1047,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：オリジナルのマスコットのイラストを添付して、設定資料をまとめるときに。
 
-<a id="ex-picturebook"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[OpenNana](https://opennana.com/awesome-prompt-gallery/official-character-reference-sheet) | [@MANISH1027512](https://x.com/MANISH1027512/status/2045013913901867334)
+
+<a id="ex-picturebook"></a>
 
 #### 同じキャラクターで続きを描く（絵本）
 
@@ -1130,9 +1158,9 @@ Thread は若者向けのストリートブランドです。広告には友人�
 
 **自店で使うなら**：「当店で扱うホビーのジャンル100選」などのネタ画像に。
 
-<a id="ex-edit"></a>
-
 **出典**：[Awesome GPT Image 2](https://github.com/ZeroLu/awesome-gpt-image/blob/main/README.ja.md)／元の投稿：[@ProperPrompter](https://x.com/ProperPrompter/status/2046534215311970694)
+
+<a id="ex-edit"></a>
 
 ### 写真の編集（画像を添付して使う）
 
