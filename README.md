@@ -3,6 +3,7 @@
 講義中に使うプロンプトを、スライドの順にまとめています。各ブロックをそのままコピーして使えます。
 
 **フライヤースタジオ**：https://flyer-studio.style-arts.workers.dev/
+
 **販促物格納場所**：https://drive.google.com/drive/folders/14PJFTXYS-igkusR_rpg4_WRdQIBZtfQi?usp=sharing
 
 ## もくじ
